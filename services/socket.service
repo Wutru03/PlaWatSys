@@ -1,0 +1,14 @@
+[Unit]
+Description= socket voor plawatsys
+After=network.target
+
+
+[Service]
+Type=simple
+ExecStart=/home/pi/c_code/plawatsys-socket-server 51515
+WorkingDirectory=/home/pi/c_code
+Restart=always
+
+
+[Install]
+WantedBy=multi-user.target

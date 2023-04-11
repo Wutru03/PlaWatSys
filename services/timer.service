@@ -1,0 +1,13 @@
+[Unit]
+Description=timer auto meting
+Also=timername.timer
+
+
+[Timer]
+OnBootSec=10s
+OnUnitActiveSec=15min
+Unit=plawatsys.service
+
+
+[Install]
+WantedBy=timers.target

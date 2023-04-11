@@ -1,0 +1,13 @@
+[Unit]
+Description=auto meting script
+After=network.target
+
+
+[Service]
+Type=simple
+ExecStart=/home/pi/c_code/meting
+Restart=on-failure
+
+
+[Install]
+WantedBy=multi-user.target

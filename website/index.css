@@ -1,0 +1,174 @@
+body {
+    background-color: darkturquoise;
+}
+
+
+.L {
+    /* background-color: blue; */
+    height: 100%;
+    width: 15%;
+    float: left;
+    overflow: auto;
+}
+
+
+.L::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+
+.ML {
+    /* background-color: green; */
+    height: 100%;
+    width: 30%;
+    float: left;
+    overflow: auto;
+}
+
+
+.ML::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+
+.MR {
+    /* background-color: yellow; */
+    height: 100%;
+    width: 15%;
+    float: left;
+    overflow: auto;
+}
+
+
+.MR::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+
+.RT {
+    /* background-color: red; */
+    height: 50%;
+    width: 40%;
+    float: left;
+}
+
+
+.RB {
+    /* background-color: white; */
+    height: 50%;
+    width: 40%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tabel {
+    max-height: 100%;
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+    color: black;
+    border: 3px solid black;
+    border-spacing: 0;
+    border-radius: 5px;
+}
+
+
+.tabel thead {
+    position: sticky;
+    top: 0;
+}
+
+
+.tabel th {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+    background-color: green;
+    font-weight: bold;
+    color: white;
+}
+
+
+.tabel thead tr:nth-child(2) th {
+    border-bottom: 3px dashed black !important;
+}
+
+
+.tabel tbody td {
+    padding: 5px;
+    text-align: right;
+}
+
+
+.tabel tbody tr:nth-child(even) {
+    background-color: rgba(0, 100, 0, 0.507);
+}
+
+
+.tabel tbody tr:nth-child(odd) {
+    background-color: rgba(0, 130, 0, 0.507);
+}
+
+
+#planten tbody tr:hover {
+    background-color: green;
+    color: white;
+}
+
+
+.buttonC {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+
+.button {
+    display: block;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 100, 0, 0.507);
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    font-size: large;
+    float: left;
+    width: 25%;
+}
+
+
+.buttonR {
+
+
+    display: none;
+    border: 3px dotted black;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    font-size: large;
+    float: left;
+    width: 50%;
+    margin-left: 2.5%;
+    background-color: rgba(0, 130, 0, 0.507);
+
+
+}
+
+
+.button:hover {
+    background-color: rgba(0, 130, 0, 0.507);
+}
+
+
+.button:active {
+    background-color: green;
+    color: white;
+}

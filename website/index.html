@@ -1,0 +1,76 @@
+<html>
+
+
+<head>
+    <title>plawatsys</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+    <div class="L">
+        <table id="planten" class="tabel">
+            <thead>
+                <tr>
+                    <th colspan="3">planten:</th>
+                </tr>
+                <tr>
+                    <th>plantId:</th>
+                    <th>soort:</th>
+                    <th>alive:</th>
+                </tr>
+            </thead>
+            <tbody id="plantenBody">
+            </tbody>
+        </table>
+    </div>
+    <div class="ML">
+        <table class="tabel">
+            <thead>
+                <tr>
+                    <th colspan="3">laatste 100 metingen:</th>
+                </tr>
+                <tr>
+                    <th>datum:</th>
+                    <th>tijd:</th>
+                    <th>vocht:</th>
+                </tr>
+            </thead>
+            <tbody id="metingenBody">
+            </tbody>
+        </table>
+    </div>
+    <div class="MR">
+        <table class="tabel">
+            <thead>
+                <tr>
+                    <th colspan="2">laatste 50 keer water:</th>
+                </tr>
+                <tr>
+                    <th>datum:</th>
+                    <th>tijd:</th>
+                </tr>
+            </thead>
+            <tbody id="pompBody">
+            </tbody>
+        </table>
+    </div>
+    <div class="RT">
+        <header></header>
+        <footer></footer>
+    </div>
+    <div class="RB">
+        <div class="buttonC">
+            <button class="button" id="MN" onclick="MN(portno, plantId)">measure now</button>
+            <div class="buttonR" id="MNR"> </div>
+        </div>
+        <div class="buttonC">
+            <button class="button" id="toggle" onclick="toggle(portno, plantId)">flip status</button>
+            <div class="buttonR" id="toggleR"> </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+
+</html>
